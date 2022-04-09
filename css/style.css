@@ -1,0 +1,352 @@
+@font-face {
+    font-family: 'poppins';
+    src: url(tipografia/Poppins-ExtraBoldItalic.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fondo{
+    background-color: #eec0c6;
+background-image: linear-gradient(315deg, #73dfad 0%, #fafafa 74%);
+
+}
+
+body {
+    font-family: 'poppins';
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.inclinacionNav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px; 
+    font-size: 15px;
+    position: relative;
+    width: 100%;
+}
+.inclinacionNav a{
+    text-decoration: none;
+    font-size: 1.4em;
+    color: rgb(52, 131, 52);
+    font-weight: bold;
+}
+
+.centrar{
+    text-align: left;
+    font-size: 44px;
+    padding: 10px;
+    font-size: 1.3em;
+}
+.textoTit{
+    font-size: 40px;
+}
+
+.fondo{
+    background-image: linear-gradient(blue white);
+}
+
+section.banner {
+    padding: 3rem 0;
+}
+
+.footer{
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #73dfad 0%, #fafafa 74%);
+    
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+.footer p{
+    margin-top: 5%;
+    margin: 0;
+}
+
+body nav{
+    border: 2px dashed green;
+    margin: 10px;
+}
+
+nav li{
+    display: inline;
+    padding: 10px;
+    width: 120px;
+    height: 30px;
+    margin-left: 5px;
+} 
+
+
+header title{
+    font-size: 10px;
+}
+
+
+.direccionDiv{
+    display: flex;
+    justify-content: end;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+}
+
+.social-icon i{
+    color: black;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.fondoNosotros{
+    background-color: rgb(202, 236, 238);
+}
+
+.copy {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.enlaces {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 30px;
+    text-decoration: none;
+    color:#021d34;
+}
+
+
+/** Globales **/
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+
+.farma__descripcion {
+ text-align: justify;
+ font-size: .8em;
+ line-height: 35px;
+}
+
+h1, h2, h3, h4 {
+    font-family: sans-serif;
+    line-height: 1.2;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+}
+
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'poppins';
+}
+
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #000;
+}
+
+.farma:last-of-type {
+    border: none;
+ }
+ .farma__label {
+     font-weight: bold;
+ }
+
+ .farma__info {
+     font-weight: normal;
+ }
+
+ .farma__label,
+ .farma__info {
+     font-size: 1.5rem;
+ }
+ 
+ .relative {
+     position: relative;
+ }
+ 
+
+.farma {
+    padding: 3rem 0;
+    border-bottom: 1px solid #021d34;
+}
+
+.logo {
+   color: #000;
+}
+
+.logo__bold {
+    color: #021d34;
+}
+
+@media (min-width: 768px) {
+
+.navegacion {
+    display: flex;
+    gap: 2rem;
+}
+
+.farma__imagen {
+    width: 55vw;
+    height: 60vh;
+}
+
+.iframe {
+    width: 55vw;
+    height: 68vh;
+}
+
+.contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+}
+
+.farma {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+
+
+@media (min-width: 1024px){
+    .farma__imagen {
+        width: 100%;
+}
+    
+    .iframe {
+        width: 100%;
+        height: 100%;
+}
+
+    .centrar {
+        font-size: 1.7em;
+}
+}
+
+
+/*-----Contacto------*/
+
+.body{
+    background: #f9feff;
+    color: #485e74;
+    line-height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.pharma-text {
+    list-style: none;
+    padding: 0;
+    font-size: .7em;
+}
+
+.pharma-container {
+    box-shadow: 0 0 20px 0 rgba(75, 95, 114, 0.8);
+}
+
+.pharma-container > * { /*aplicado a todos los elementos dentro*/
+    padding: 1em;
+}
+
+.company-info {
+    background: #c9e9fc;
+}
+
+.company-info h3,
+.company-info ul {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact {
+    background: #f9feff;
+}
+
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.contact form label {
+    display: block;
+}
+
+.contacto form p {
+    margin: 0;
+}
+
+.contact form .fill {
+    grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #5d83ae;
+}
+
+.contact form button {
+    background: #c9e6ff;
+    border: 0;
+}
+
+.contact form button:hover{
+    background-color: none;
+    color: #021d34;
+    outline: 0;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 1s ease-in-out;
+}
+
+/*------Responsive------*/
+
+@media (min-width: 768px){
+
+    .pharma-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .pharma-container >* {
+        padding: 2em;
+    }
+
+    .company-info h3,
+    .company-info ul,
+    .brand-pharma {
+        text-align: left;
+    }
+
+}
