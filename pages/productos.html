@@ -1,52 +1,80 @@
-<!DOCTYPE html>
 <html>
  <head>
   <title>productos</title>
-    <link rel="stylesheet" href="/style.css">
-    <script src="https://kit.fontawesome.com/3a8930c17d.js" crossorigin="anonymous"></script>
-<link rel="shortcut icon" href="imagenes/favicon - Acceso directo.lnk" type="image/x-icon">
-<link rel="icon" href="imagenes/favicon - Acceso directo.lnk" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/3a8930c17d.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="imagenes/favicon - Acceso directo.lnk" type="image/x-icon">
+  <link rel="icon" href="imagenes/favicon - Acceso directo.lnk" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../boostrap/css/bootstrap.css">
 </head>
 <body>
-    <header id="fondo">
+    <header class="fondo">
         <img src="imagenes/simbolo_do_curso_de_farmacia_bordado_146_1_20180719213728.webp"width="100" alt="simbolo de farmacia">
-        <nav>  <!--menu de navegacion-->
-            <h2>menu</h2>
-           <ul>
-             <li><a href="index.html">inicio</a></li>
-             <li><a href="pages/nosotros/nosotros.html">nosotros</a></li>
-             <li><a href="pages/productos/productos.html">productos</a></li>
-             <li><a href="pages/contactos/contactos.html">contactos</a></li>
-             <li><a href="pages/opiniones/opiniones.html">opiniones</a></li>
-             
-           </ul>
+        <nav> 
+          <h1 class="centrar animate__animated animate__backInDown">Productos</h1>
         </nav>
-        <p class="textoM">nuesros productos</p> 
-    
+        <hr>
     </header>
-    <h1 class="textoMayor">laboratorios</h1>
-<ul>
-    <li>casasco</li>
-    <li>roemmers</li>
-    <li>casasco</li>
-    <li>bago</li>
-</ul>
-     <p>taambien encontraras las mejores ofertas del mercado</p>
-     <p>aprovecha las promociones de hot sale y encontra el producto que buscabas
+    <h1 class="fw-bold">Nuestros productos</h1>
+    <a class="btn btn-primary" href="#" role="button">bebe</a>
+<button class="btn btn-primary" type="submit">perfumeria</button>
+<input class="btn btn-primary" type="button" value="domestica">
+<input class="btn btn-primary" type="submit" value="salud y farmacia">
+<input class="btn btn-primary" type="reset" value="alimentos">
+<input class="btn btn-primary" type="reset" value="cuidado personal">
+<input class="btn btn-primary" type="reset" value="belleza">
+     
+<hr>
+<p class="fs-3" >Aprovecha las promociones de hot sale y encontra el producto que buscabas
          al mejor precio, la mayor variedad de marcas en un solo lugar.
          compra online y recibilo en tu casa, beneficios con tarjeta, 2x1, 3x2
          70% off y mas promociones todo el año, ¡aprovecha!
      </p>
- <img src="imagenes/R.png"width="200px" alt="farmacia">
- <img src="imagenes/OIP (1).jpg"width="200px" alt="farmacia">
- <img src="imagenes/procut.jpg" width="200px" alt="farmacia">
- <footer>
- <p>copyrhigt 2021 desarrolado por: elias q</p>
-
-  <div>
-    <a href="https://facebook.com" target="blank"><i class="fa-brands fa-facebook"></i></a>
-    <a href="https://instagram.com" target="blank"><i class="fa-brands fa-instagram"></i></a>
+     
+     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagenes/WhatsApp Image 2022-04-13 at 8.47.16 PM.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/b984c733-b6c3-4556-b21e-14feb5955df4.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/f1396bf9-ddba-4af7-a567-4f7a9ffe9924.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+ <footer class="fondo">
+  <div class="enlaces">
+    <a href="../index.html">Ir a menu</a>
+    <a href="https://plataforma.coderhouse.com/chat">Enlace al Estudio Coder</a>
+    <a href="#arriba"> Ir arriba </a>
   </div>
+
+  <div class="direccionDiv">
+    <div class="social-icon">
+      <a href="https://wwww.facebook.com/" target="blank" class="social-iconlink"><i class="fa-brands fa-facebook"></i></a>      
+      <a href="https://wwww.instagram.com/" target="blank" class="social-iconlink"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+ </div>
+
+  <p class="copy">Copyright 2022 desarrollado por: Elias Q</p>
+
 </footer>
 
 </body>
