@@ -1,351 +1,197 @@
-@font-face {
-    font-family: 'poppins';
-    src: url(tipografia/Poppins-ExtraBoldItalic.ttf);
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.fondo{
-    background-color: #eec0c6;
-background-image: linear-gradient(315deg, #73dfad 0%, #fafafa 74%);
-
+     
 }
 
 body {
-    font-family: 'poppins';
-    font-size: 1.6rem;
-    line-height: 2;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.inclinacionNav{
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px; 
-    font-size: 15px;
-    position: relative;
+/**Header**/
+header {
     width: 100%;
-}
-.inclinacionNav a{
-    text-decoration: none;
-    font-size: 1.4em;
-    color: rgb(52, 131, 52);
-    font-weight: bold;
-}
+    height: 50px;
+    background: #ffffff;
+    color: rgb(84, 248, 78);
 
-.centrar{
-    text-align: left;
-    font-size: 44px;
-    padding: 10px;
-    font-size: 1.3em;
-}
-.textoTit{
-    font-size: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; /**para que se superponga a los elementos**/
 }
 
-.fondo{
-    background-image: linear-gradient(blue white);
+/**Contenedor**/
+.contenedor {
+    width: 98%;
+    margin: auto;
 }
 
-section.banner {
-    padding: 3rem 0;
+h1 {
+    float: left;
 }
 
-.footer{
-    background-color: #eec0c6;
-    background-image: linear-gradient(315deg, #73dfad 0%, #fafafa 74%);
-    
-    padding-bottom: 3rem;
-    margin-top: 4rem;
+header .contenedor {
+    display: table;
 }
 
-.footer p{
-    margin-top: 5%;
-    margin: 0;
+section {
+    width: 100%;
+    margin-bottom: 25px;
 }
 
-body nav{
-    margin: 10px;
+#bienvenidos {
+    text-align: center;
 }
 
-nav li{
-    display: inline;
-    padding: 10px;
-    width: 120px;
-    height: 30px;
-    margin-left: 5px;
-} 
-
-
-header title{
-    font-size: 10px;
-}
-
-
-.direccionDiv{
+footer .contenedor {
     display: flex;
-    justify-content: end;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 10px;
-    padding: 10px;
-}
-
-.social-icon i{
-    color: black;
-    margin-left: 10px;
-    display: flex;
     justify-content: center;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-}
-
-.fondoNosotros{
-    background-color: rgb(202, 236, 238);
+    padding-bottom: 25px;
 }
 
 .copy {
-    text-align: center;
-    font-size: 1.2em;
+    font-size: 20px;
 }
-
-.enlaces {
-    text-align: center;
-    font-size: 1.2em;
-    padding: 30px;
-    text-decoration: none;
-    color:#021d34;
-}
-
-
-/** Globales **/
-.contenedor {
-    width: min(90%, 120rem);
-    margin: 0 auto;
-}
-
-
-.farma__descripcion {
- text-align: justify;
- font-size: .8em;
- line-height: 35px;
-}
-
-h1, h2, h3, h4 {
-    font-family: sans-serif;
-    line-height: 1.2;
-    color: #000;
-}
-
-img {
-    max-width: 100%;
-}
-
-.no-margin {
-    margin: 0;
-}
-.no-padding {
-    padding: 0;
-}
-.centrar-texto {
-    text-align: center;
-    font-size: 1.4em;
-    font-family: 'poppins';
-}
-
-.navegacion__enlace {
-    display: block;
-    text-align: center;
-    font-size: 1.8rem;
-    color: #000;
-}
-
-.farma:last-of-type {
-    border: none;
- }
- .farma__label {
-     font-weight: bold;
- }
-
- .farma__info {
-     font-weight: normal;
- }
-
- .farma__label,
- .farma__info {
-     font-size: 1.5rem;
- }
- 
- .relative {
-     position: relative;
- }
- 
-
-.farma {
-    padding: 3rem 0;
-    border-bottom: 1px solid #021d34;
-}
-
-.logo {
-   color: #000;
-}
-
-.logo__bold {
-    color: #021d34;
-}
-
-@media (min-width: 768px) {
-
-.navegacion {
-    display: flex;
-    gap: 2rem;
-}
-
-.farma__imagen {
-    width: 55vw;
-    height: 60vh;
-}
-
-.iframe {
-    width: 55vw;
-    height: 68vh;
-}
-
-.contenido-principal {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        column-gap: 4rem;
-}
-
-.farma {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 2rem;
-    }
-}
-
-
-
-@media (min-width: 1024px){
-    .farma__imagen {
-        width: 100%;
-}
-    
-    .iframe {
-        width: 100%;
-        height: 100%;
-}
-
-    .centrar {
-        font-size: 1.7em;
-}
-}
-
-
-/*-----Contacto------*/
-
-.body{
-    background: #f9feff;
-    color: #485e74;
-    line-height: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1em;
-}
-
-.container {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
-}
-
-.pharma-text {
-    list-style: none;
-    padding: 0;
-    font-size: .7em;
-}
-
-.pharma-container {
-    box-shadow: 0 0 20px 0 rgba(75, 95, 114, 0.8);
-}
-
-.pharma-container > * { /*aplicado a todos los elementos dentro*/
-    padding: 1em;
-}
-
-.company-info {
-    background: #c9e9fc;
-}
-
-.company-info h3,
-.company-info ul {
-    text-align: center;
-    margin: 0 0 1rem 0;
-}
-
-.contact {
-    background: #f9feff;
-}
-
-.contact form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 25px;
-}
-
-.contact form label {
-    display: block;
-}
-
-.contacto form p {
-    margin: 0;
-}
-
-.contact form .fill {
-    grid-column: 1 / 3;
-}
-
-.contact form button,
-.contact form input,
-.contact form textarea {
+.sociales {
     width: 100%;
-    padding: 1em;
-    border: 1px solid #5d83ae;
+    text-align: center;
+    font-size: 28px;
 }
 
-.contact form button {
-    background: #c9e6ff;
-    border: 0;
+.sociales a {
+    color: rgb(231, 225, 225);
+    text-decoration: none;
+}
+#menu-bar {
+    display: none;
 }
 
-.contact form button:hover{
-    background-color: none;
-    color: #021d34;
-    outline: 0;
-    font-size: 1em;
-    font-weight: bold;
-    transition: background-color 1s ease-in-out;
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
 }
 
-/*------Responsive------*/
+.menu {
+    position: absolute;
+    top: 50px; /**para que el menu empiece desde abajo**/
+    left: 0;
+    width: 100%;
+    height: 100vh; /**para que ocupe el ancho de la ventana**/
+    background: #e6d0d0;
+    transition: all 0.5s;
+    transform: translatex(-100%); /**el menu se traslada y se oculta**/
+}
 
-@media (min-width: 768px){
+.menu a {
+    display: block;
+    color: rgb(88, 42, 42);
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid  rgba(238, 238, 238, 0.5);
+}
 
-    .pharma-container {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+.menu a:hover {
+    background: rgba(255, 116, 116, 0.3);
+}
+#menu-bar:checked ~ .menu {
+    transform: translatex(0%); /**al presionar la barra de menu se despliega**/
+}
+#banner {
+    margin-top: 40px;
+    position: relative; /**para que el contenedor se posicione de acuerdo a este**/
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+}
+
+#banner a:hover {
+    background: rgba(238, 238, 238, 0.5);
+}
+#blog h3, h4 {
+    text-align: center;
+}
+
+
+#blog .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#blog article {
+    margin: 15px;
+}
+
+#blog img {
+    width: 100%;
+    max-width: 280px;
+}
+@media (min-width:480px) {
+    #banner h2 {
+        font-size: 40px; /**que a partir de 480px el h2 sea mas grande**/
     }
-    .pharma-container >* {
-        padding: 2em;
+
+    #banner a {
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:768px) { /**tamaño tablet**/
+    #banner {
+        height: -300px; /**a partir de 768, que el banner tenga esa altura**/
+        overflow: hidden; /**para que la imagen no se salga del contenedor y quite el excedente**/
     }
 
-    .company-info h3,
-    .company-info ul,
-    .brand-pharma {
-        text-align: left;
+    #banner img {
+        height: auto; /**quiero que la img tenga una altura automatica**/
+        margin-top: -25px;
     }
+}
 
+@media (min-width:1024px) {
+    #banner img {
+        margin-top: -40px; /**si no hago esto la imagen queda cortada**/
+    }
+}
+
+@media (min-width:1024px) {
+ .menu {
+     position: static; /** a partir de 1024px el menu se coloca a la izquierda de la pantalla**/
+     width: auto;
+     height: auto;
+     transform: translatex(0%); /**aca no queremos que se translade**/
+     float: right;   /**se posiciono a la derecha**/
+     display: flex; /**se posiciono arriba**/
+ }
+
+ .menu a {
+     border: none;
+ }
+ header label {
+     display: none; /**para que la etiqueta de menu no se vea**/
+ }
+}
+
+@media (min-width:768px){
+   .sociales{
+       width: auto;
+   }
+   footer .contenedor {
+       justify-content: space-between; /**se va al extremo**/
+   }
+}
+
+@media (min-width:1024px) {
+    .contenedor {
+        width: 1000px; /**para que cuando se agrande la pantalla el contenedor quede fijo en 1000, alineado y en el medio**/
+
+    }
 }

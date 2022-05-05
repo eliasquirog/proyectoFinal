@@ -1,117 +1,74 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farmasoluciones</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="boostrap/css/bootstrap.css">
-    <!--Fontawesome-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3a8930c17d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css%22%3E">
-    <link rel="shortcut icon" href="./imagenes/favicon - Acceso directo.lnk" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!--Animate.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-  </head>
-
- <body><!--cuerpo-->
-  <header><!--encabezado-->
-    <div class="fondo">
-    <img src="imagenes/simbolo_do_curso_de_farmacia_bordado_146_1_20180719213728.webp"width="100" alt="simbolo de farmacia">
-      <h1 class="centrar animate__animated animate__backInDown">FarmaSoluciones</h1>   
-     </div> 
-     <hr>
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">INICIO</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/contactos.html">Contactos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/trabaja con nosotros.html">Trabaja con nosotros</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-        <img src="imagenes/coronavirus-gcf380d8d5_1920.jpg" class="relative">
-    </header>
-
-    <main class="contenedor">
-        <h3 class="centrar-texto">Su farmacia amiga</h3>
-
-        <div class="farma">
-            <div class="farma__imagen">
-                <img src="imagenes/productos-farmacia-1.jpg" alt="Imagen de la farmacia">
-            </div>
-            <div class="farma__informacion">
-                <p class="farma__descripcion">
-                    Famosa en zona oeste por sus bajos precios y medicamentos de primer nivel,
-          con precios completamente accesibles y droguerias de todo tipo. Arma tu propio carrito virtual y compra desde tu casa.
-                </p>
-            </div> 
-        </div> 
-
-        <div class="farma">
-            <div class="farma__imagen">
-                <iframe src="https://www.youtube.com/embed/N90tlMkmZsI" class="iframe"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-            </div>
-            <div class="farma__informacion">
-                <h3 class="no-margin">Hagase el test de covid en su hogar</h3>
-            
-                <p class="farma__descripcion">
-                Nunc aliquam hendrerit odio sit amet venenatis. Nunc varius, libero a tempor rutrum, nulla risus congue velit, nec suscipit nibh lectus ac dolor. Nulla facilisi.
-                </p>
-            </div> 
-        </div> 
-
-        <div class="farma">
-            <div class="farma__imagen">
-                <img src="imagenes/vacuna-antigripal.jpg" alt="imagen vacuna antigripal">
-            </div>
-            <div class="farma__informacion">
-                <h3 class="no-margin">Tenemos vacunas antigripales</h3>
-                <p class="farma__label">Precio: 
-                    <span class="farma__info">$1000</span>
-                </p>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     
-                <p class="farma__descripcion">
-                    Autem rem deleniti esse aspernatur, labore harum ab aliquam mollitia ipsam atque?
-                </p>
-            </div> 
-        </div>         
-    </main>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="icon-guidedog">Farmasoluciones</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="pages/nosotros.html">nosotros</a>
+                <a href="pages/productos.html">productos</a>
+                <a href="pages/trabaja con nosotros.html">trabaja con nostros</a>
+                <a href="pages/contactos.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="banner">
+            <img src="pages/imagenes/neon-para-farmacia-2.jpg">
+        </section>
+        <section id="bienvenidos">
+            <h2>BIENVENIDOS A NUESTRA FARMACIA</h2>
+            <p>En Farmasoluciones sabemos que hablar de salud es hablar de personas. El propósito de nuestra farmacia y parafarmacia online es ayudar a las personas a cuidar de su salud y la de los suyos de manera segura y accesible
+                aqui encontraras productos de farmacia y medicamentos OTC en nuestra web, te lo enviamos a domicilio de manera segura y en un timepo muy redusido
+                ademas tendras Información experta y servicio eficaz. Como farmacéuticos construimos una comunidad de salud en la que el paciente se sitúa en el eje central.
+                Por eso queremos que con total seguridad puedas entrar a nuestra pagina, ver nuestros productos, ponerte en contacto con nostros e incluso poder trabajar en esta profesion 
+             </p>
 
-        <footer class="fondo">
-            <div class="enlaces">
+        </section>
+        <section id="blog">
+            <h3>farmacia completa</h3>
+            <div class="contenedor">
+              <article>
+                  <img src="imagenes/vacuna-antigripal.jpg">
+                  <h4>vacunas antigripales</h4>
+              </article>  
+              <article>
+                <iframe src="https://www.youtube.com/embed/N90tlMkmZsI" class="iframe"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                <h4>test de antigenos en casa</h4>
+            </article>  
+            <article>
+                <img src="imagenes/coronavirus-gcf380d8d5_1920.jpg">
+                <h4>toda protecion para el COVID</h4>
+            </article>  
+            </div>
+        </section>
+        <footer><!--pie de pagina-->
+            <div>
               <a href="../index.html">Ir a menu</a>
               <a href="https://plataforma.coderhouse.com/chat">Enlace al Estudio Coder</a>
               <a href="#arriba"> Ir arriba </a>
             </div>
-          
-            <div class="direccionDiv">
               <div class="social-icon">
                 <a href="https://wwww.facebook.com/" target="blank" class="social-iconlink"><i class="fa-brands fa-facebook"></i></a>      
                 <a href="https://wwww.instagram.com/" target="blank" class="social-iconlink"><i class="fa-brands fa-instagram"></i></a>
               </div>
-           </div>
-          
+           
+        
             <p class="copy">Copyright 2022 desarrollado por: Elias Q</p>
-          
-          </footer>
+        
+           </footer>
 </body>
 </html>
