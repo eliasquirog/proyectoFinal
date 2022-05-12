@@ -1,8 +1,12 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Square+Peg&display=swap");
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body {
+.body-contactos {
   background: #9ACEF8;
   color: #485e74;
   line-height: 1.5em;
@@ -94,6 +98,340 @@ body {
   transition: background-color 1s ease-in-out;
 }
 
+/**Header**/
+header {
+  width: 100%;
+  height: 50px;
+  background: #ffffff;
+  color: rgb(84, 248, 78);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  /**para que se superponga a los elementos**/
+}
+
+/**Contenedor**/
+.contenedor {
+  width: 98%;
+  margin: auto;
+}
+
+h1 {
+  float: left;
+}
+
+header .contenedor {
+  display: table;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+#bienvenidos {
+  text-align: center;
+}
+
+.parrafo-uno {
+  font-size: 18px;
+  margin: 20px;
+}
+
+footer .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+.copy {
+  font-size: 20px;
+}
+
+.sociales {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+}
+
+.sociales a {
+  color: rgb(231, 225, 225);
+  text-decoration: none;
+}
+
+#menu-bar {
+  display: none;
+}
+
+header label {
+  float: right;
+  font-size: 28px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 50px;
+  /**para que el menu empiece desde abajo**/
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /**para que ocupe el ancho de la ventana**/
+  background: #b0cab8;
+  transition: all 0.5s;
+  transform: translatex(-100%);
+  /**el menu se traslada y se oculta**/
+}
+
+.menu a {
+  display: block;
+  color: rgb(88, 42, 42);
+  height: 50px;
+  text-decoration: none;
+  padding: 15px;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.5);
+}
+
+.menu a:hover {
+  background: rgba(255, 116, 116, 0.3);
+}
+
+#menu-bar:checked ~ .menu {
+  transform: translatex(0%);
+  /**al presionar la barra de menu se despliega**/
+}
+
+#banner {
+  margin-top: 40px;
+  position: relative;
+  /**para que el contenedor se posicione de acuerdo a este**/
+}
+
+#banner img {
+  width: 100%;
+  height: 100%;
+}
+
+#banner a:hover {
+  background: rgba(238, 238, 238, 0.5);
+}
+
+#blog h3, h4 {
+  text-align: center;
+}
+
+#blog .contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#blog article {
+  margin: 15px;
+}
+
+#blog img {
+  width: 100%;
+  max-width: 280px;
+}
+
+footer {
+  text-align: center;
+  background-image: linear-gradient(315deg, #73dfad 0%, #fafafa 74%);
+}
+
+footer div {
+  font-size: 24px;
+}
+
+.main-nos {
+  background-image: linear-gradient(315deg, #73dfad 0%, #fafafa 74%);
+}
+
+.div-nos {
+  margin-top: 60px;
+  font-size: 35px;
+}
+
+.img-nos {
+  margin: 15px;
+}
+
+.parraf-uno {
+  font-size: 25px;
+}
+
+.parraf-dos {
+  font-size: 20px;
+  margin: 15px;
+}
+
+.body-trab {
+  background-image: linear-gradient(315deg, #73dfad 0%, #fafafa 74%);
+}
+
+.subt {
+  margin-top: 60px;
+  font-size: 23px;
+}
+
+.parrUno {
+  font-size: 25px;
+}
+
+.text {
+  font-size: 18px;
+  margin: 20px;
+}
+
+.body-products {
+  background-image: linear-gradient(315deg, #73dfad 0%, #fafafa 74%);
+  font-family: "Poppins", sans-serif;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section {
+  padding: 5rem 0 2rem;
+}
+
+.section-title {
+  position: relative;
+  font-size: 1em;
+  margin-top: -15px;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 0.18rem;
+  top: -1rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/*------Layout-------*/
+.bd-grid {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2rem;
+  width: calc(100% - 2rem);
+  /*los 2 rem de resta son los del espacio de gap*/
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.nav__shop {
+  text-align: right;
+  margin: 20px;
+  font-size: 1.3em;
+  margin-right: 20px;
+}
+
+.buttoncito {
+  background-color: rgb(23, 206, 48);
+  padding: 1rem 1.4rem;
+  border-radius: 10px;
+  color: azure;
+  font-size: 0.7em;
+  font-weight: 600;
+  border: none;
+  margin-top: 10px;
+}
+
+.buttoncito:hover {
+  color: #000;
+}
+
+/*------Featured------*/
+.featured__container {
+  row-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgb(240, 247, 242);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.product__sale {
+  position: absolute;
+  left: 0.1rem;
+  background-color: rgb(245, 230, 30);
+  color: red;
+  padding: 0.25rem 0.2rem;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+  transform: rotate(-90deg);
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+.product__name,
+.product__price {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.product__name {
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.product__price {
+  margin-bottom: 1.2rem;
+}
+
+.product:hover {
+  transform: translateY(-0.5rem);
+}
+
+.product__pages {
+  margin-top: 40px;
+}
+
+.product__pag {
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+}
+
+.product__pag:hover {
+  background-color: #000;
+  color: #000;
+}
+
+.product__img {
+  width: 150px;
+  max-height: 210px;
+}
+
 /*------responsive contacto------*/
 @media (min-width: 768px) {
   .pharma-container {
@@ -109,6 +447,95 @@ body {
 .company-info ul,
 .brand-pharma {
     text-align: left;
+  }
+}
+@media (min-width: 480px) {
+  #banner h2 {
+    font-size: 40px;
+    /**que a partir de 480px el h2 sea mas grande**/
+  }
+
+  #banner a {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 768px) {
+  /**tamaño tablet**/
+  #banner {
+    height: -300px;
+    /**a partir de 768, que el banner tenga esa altura**/
+    overflow: hidden;
+    /**para que la imagen no se salga del contenedor y quite el excedente**/
+  }
+
+  #banner img {
+    height: auto;
+    /**quiero que la img tenga una altura automatica**/
+    margin-top: -25px;
+  }
+}
+@media (min-width: 1024px) {
+  #banner img {
+    margin-top: -40px;
+    /**si no hago esto la imagen queda cortada**/
+  }
+}
+@media (min-width: 1024px) {
+  .menu {
+    position: static;
+    /** a partir de 1024px el menu se coloca a la izquierda de la pantalla**/
+    width: auto;
+    height: auto;
+    transform: translatex(0%);
+    /**aca no queremos que se translade**/
+    float: right;
+    /**se posiciono a la derecha**/
+    display: flex;
+    /**se posiciono arriba**/
+  }
+
+  .menu a {
+    border: none;
+  }
+
+  header label {
+    display: none;
+    /**para que la etiqueta de menu no se vea**/
+  }
+}
+@media (min-width: 768px) {
+  .sociales {
+    width: auto;
+  }
+
+  footer .contenedor {
+    justify-content: space-between;
+    /**se va al extremo**/
+  }
+}
+@media (min-width: 1024px) {
+  .contenedor {
+    width: 1000px;
+    /**para que cuando se agrande la pantalla el contenedor quede fijo en 1000, alineado y en el medio**/
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+}
+.section {
+  padding: 7rem 0 3rem;
+}
+
+.section-title::after {
+  width: 76px;
+}
+
+@media screen and (min-width: 1024px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

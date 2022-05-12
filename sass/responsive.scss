@@ -14,3 +14,87 @@
         text-align: left;
     }
 }
+@media (min-width:480px) {
+    #banner h2 {
+        font-size: 40px; /**que a partir de 480px el h2 sea mas grande**/
+    }
+
+    #banner a {
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:768px) { /**tamaño tablet**/
+    #banner {
+        height: -300px; /**a partir de 768, que el banner tenga esa altura**/
+        overflow: hidden; /**para que la imagen no se salga del contenedor y quite el excedente**/
+    }
+
+    #banner img {
+        height: auto; /**quiero que la img tenga una altura automatica**/
+        margin-top: -25px;
+    }
+}
+
+@media (min-width:1024px) {
+    #banner img {
+        margin-top: -40px; /**si no hago esto la imagen queda cortada**/
+    }
+}
+
+@media (min-width:1024px) {
+ .menu {
+     position: static; /** a partir de 1024px el menu se coloca a la izquierda de la pantalla**/
+     width: auto;
+     height: auto;
+     transform: translatex(0%); /**aca no queremos que se translade**/
+     float: right;   /**se posiciono a la derecha**/
+     display: flex; /**se posiciono arriba**/
+ }
+
+ .menu a {
+     border: none;
+ }
+ header label {
+     display: none; /**para que la etiqueta de menu no se vea**/
+ }
+}
+
+@media (min-width:768px){
+   .sociales{
+       width: auto;
+   }
+   footer .contenedor {
+       justify-content: space-between; /**se va al extremo**/
+   }
+}
+
+@media (min-width:1024px) {
+    .contenedor {
+        width: 1000px; /**para que cuando se agrande la pantalla el contenedor quede fijo en 1000, alineado y en el medio**/
+
+    }
+}
+@media screen and (min-width:768px){
+    body{
+      margin: 0;
+    }
+    }
+
+    .section {
+      padding: 7rem 0 3rem;
+    }
+
+    .section-title::after{
+      width: 76px;
+    }
+
+
+  @media screen and (min-width:1024px){
+
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+  }
